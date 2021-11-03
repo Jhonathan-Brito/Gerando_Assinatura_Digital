@@ -1,14 +1,13 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-navbar hideBackButton="true">
+    <ion-title style="text-align: center"> Assinatura </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+
+  <button ion-button full (click)="openSignatureModel()"> Open Signature </button>
+
+  <div><img [src]='signatureImage'*ngIf="signatureImage"/></div>
+
 </ion-content>
